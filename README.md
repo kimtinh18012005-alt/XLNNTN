@@ -1,4 +1,4 @@
-ĐỀ CƯƠNG & CẨM NANG THỰC THI DỰ ÁN MÔN XỬ LÝ NGÔN
+##ĐỀ CƯƠNG & CẨM NANG THỰC THI DỰ ÁN MÔN XỬ LÝ NGÔN
 NGỮ TỰ NHIÊN
 Đề tài: Phân loại câu hỏi theo lĩnh vực dựa trên văn bản. Dataset: Yahoo Answers 10 categories
 for NLP (Kaggle). Nhóm thực hiện (5 người): Tình, Hiệp, Nhựt Anh, Bình, Cường.
