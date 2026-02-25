@@ -3,13 +3,13 @@
 
 #**Đề tài: Phân loại câu hỏi theo lĩnh vực dựa trên văn bản. Dataset: Yahoo Answers 10 categories for NLP (Kaggle). Nhóm thực hiện (5 người): Tình, Hiệp, Nhựt Anh, Bình, Cường.**
 
-PHẦN 1: SƯỜN BÁO CÁO WORD TỔNG THỂ (DÀN Ý BÁO CÁO)
+#**PHẦN 1: SƯỜN BÁO CÁO WORD TỔNG THỂ (DÀN Ý BÁO CÁO)** 
 
 Phần này là khung mục lục cho file Word. Các thành viên bám sát vào các mục này để viết nội dung tương ứng.
 
 TRANG BÌA LỜI CẢM ƠN TÓM TẮT ĐỀ TÀI (ABSTRACT) MỤC LỤC & DANH MỤC HÌNH ẢNH, BẢNG BIỂU
 
-CHƯƠNG 1: TỔNG QUAN ĐỀ TÀI (Người viết: Tình)
+#**CHƯƠNG 1: TỔNG QUAN ĐỀ TÀI (Người viết: Tình)#**
 
 - 1.1 Đặt vấn đề và tính cấp thiết (Tại sao cần phân loại văn bản tự động).
 - 1.2 Mục tiêu đề tài (Phân loại tự động 10 lĩnh vực từ Yahoo Answers).
