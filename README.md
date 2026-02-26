@@ -181,11 +181,7 @@ Bước 4: Chạy Demo Mở Terminal trong VS Code (Ctrl + ~), gõ lệnh  strea
 
 Trong kỷ nguyên bùng nổ thông tin, việc tự động hóa quá trình phân loại văn bản đóng vai trò cốt lõi trong các hệ thống hỏi đáp (Q&A) và định tuyến thông tin. Đồ án này tập trung giải quyết bài toán phân loại câu hỏi tiếng Anh vào 10 lĩnh vực khác nhau sử dụng tập dữ liệu Yahoo Answers. Nhóm nghiên cứu đã thực hiện một quy trình toàn diện từ bước tiền xử lý ngôn ngữ tự nhiên, trích xuất đặc trưng văn bản, cho đến việc áp dụng và so sánh các mô hình từ cơ bản đến
 
-hiện đại. Cụ thể, báo cáo tiến hành đối chiếu hiệu năng giữa mô hình Học máy truyền thống (SVM, Naive Bayes), mô hình Học sâu (Bi-LSTM) và kiến trúc tiên tiến Transformer (DistilBERT). Kết quả thực nghiệm cho thấy mô hình
-
-Đ*i*ˋ*e*^*nte*^*nmodelto*ˊ^*tnha*^ˊ*t*,*VD* : *DistilBERT* đạt độ chính xác cao nhất với F1-Score lên tới
-
-Đ*i*ˋ*e*^*nso*ˊ^,*VD* : 76.5
+hiện đại. Cụ thể, báo cáo tiến hành đối chiếu hiệu năng giữa mô hình Học máy truyền thống (SVM, Naive Bayes), mô hình Học sâu (Bi-LSTM) và kiến trúc tiên tiến Transformer (DistilBERT). Kết quả thực nghiệm cho thấy mô hình điền tên model tốt nhất,VD : DistilBERT đạt độ chính xác cao nhất với F1-Score lên tới : điền số vào ,VD : 76.5
 
 . Cuối cùng, nhóm đã triển khai thành công một ứng dụng Web Demo trực quan hóa kết quả của mô hình trong điều kiện thực tế.
 
@@ -196,23 +192,22 @@ hiện đại. Cụ thể, báo cáo tiến hành đối chiếu hiệu năng gi
 
    **CHƯƠNG 2: CƠ SỞ LÝ THUYẾT**
 
-1. Phương pháp trích xuất đặc trưng (TF-IDF) Để máy tính có thể hiểu được ngôn ngữ của con người, văn bản cần được số hóa. Nhóm sử dụng kỹ thuật TF-IDF (Term Frequency - Inverse Document Frequency). Khác với việc đếm tần suất đơn thuần, TF-IDF đánh giá mức độ quan trọng của một từ thông qua việc phạt trọng số của những từ xuất hiện quá phổ biến ở mọi tài liệu (như "the", "a", "is"). Công thức: TF-IDF(t, d, D) = TF(t, d) \* IDF(t, D)
+1. Phương pháp trích xuất đặc trưng (TF-IDF) Để máy tính có thể hiểu được ngôn ngữ của con người, văn bản cần được số hóa. Nhóm sử dụng kỹ thuật TF-IDF (Term Frequency - Inverse Document Frequency). Khác với việc đếm tần suất đơn thuần, TF-IDF đánh giá mức độ quan trọng của một từ thông qua việc phạt trọng số của những từ xuất hiện quá phổ biến ở mọi tài liệu (như "the", "a", "is"). Công thức: : TF-IDF(t, d, D) = TF(t, d) * IDF(t, D)
 1. Mạng Nơ-ron hồi quy và LSTM Đối với văn bản, thứ tự xuất hiện của từ ngữ mang ý nghĩa quyết định. Mạng RNN truyền thống gặp phải hiện tượng triệt tiêu đạo hàm (Vanishing Gradient) khi xử lý câu dài. Thuật toán LSTM ra đời với cơ chế "Tế bào bộ nhớ" cùng 3 cổng (Input, Forget, Output Gate) giúp mô hình có khả năng ghi nhớ các thông tin ngữ cảnh quan trọng từ đầu câu đến cuối câu.
-
-*Che*ˋ*nh*ˋı*nh*ả*nhs*ơđ*o*ˋ^*m*ạ*ngLSTM*
+   CHÈN HÌNH ẢNH SƠ ĐỒ MẠNG LSTM
 
 **CHƯƠNG 3: DỮ LIỆU VÀ TIỀN XỬ LÝ**
 
 1. Phân tích tập dữ liệu (EDA) Tập dữ liệu Yahoo Answers gồm 10 danh mục (Society, Science, Health...). Nhìn vào biểu đồ phân phối nhãn bên dưới, ta thấy số lượng mẫu ở mỗi lớp là khá đồng đều, do đó nhóm không cần áp dụng các kỹ thuật cân bằng dữ liệu phức tạp (như SMOTE).
 
-*Che*ˋ*nh*ˋı*nhBarchart*đˊ*e*^*mso*ˊ^*l*ượ*ngt*ừ*ngclass*
+CHÈN HÌNH BACHAR ĐẾM SỐ LƯỢNG TỪNG CLASS 
 
 2. Tiền xử lý (Data Preprocessing) Văn bản gốc do người dùng mạng nhập chứa rất nhiều lỗi. Nhóm đã thực hiện các bước chuẩn hóa tuần tự:
 - Lọc nhiễu: Xóa thẻ  <br> , URL và các icon không mang ý nghĩa ngôn ngữ.
 - Stopwords Removal: Loại bỏ các giới từ, liên từ tiếng Anh thông qua thư viện NLTK.
 - Lemmatization: Chuyển đổi các từ về dạng nguyên thể cơ sở (ví dụ: "better" -> "good", "running" -> "run") nhằm thu gọn kích thước từ điển.
 
-*Che*ˋ*nb*ả*ng* : 1*c*ộ*tCa*^*ugo*ˊ^*c* − 1*c*ộ*tCa*^*usaukhix*ử*ly*ˊ
+CHÈN BẢNG : 1 CỘT CÂU GỐC VÀ 1 CÂU SAU KHI XỬ LÝ 
 
 **CHƯƠNG 4: THỰC NGHIỆM VÀ HUẤN LUYỆN**
 
@@ -227,17 +222,14 @@ hiện đại. Cụ thể, báo cáo tiến hành đối chiếu hiệu năng gi
 
 51\. Ket qua thutc nghiém Du¢i day la bang tong hop hiéu nang cia 3 nhom phvong phap chinh dua trén
 
-|(Features) Accuracy|Precision|
-| :- | :- |
-|68\.2%|68\.5%|
+Két qua So sanh M6hinh
 
-68\.2% 68.1%
-
-|Linear SVM TF-IDF|72\.4%|72\.6%|72\.4%|
+|Dac trung (Features) Accuracy|Precision|Recall|F1-Score|
 | :- | :- | :- | :- |
-|Bi-LSTM Word2Vec /|Embedding 73.8%|73\.5%|73\.8%|
-|DistiIBERT Transformer|77\.1%|77\.3%|77\.1%|
-
+|TF-IDF 68.2%|68\.5%|68\.2%|68\.1%|
+|TF-IDF 72.4%|72\.6%|724% ==|72\.5%|
+|Word2Vec / Embedding 73.8%|73\.5%|—713.8% ==|73\.6%|
+|Transformer 771%|77\.3%|771%|77\.2%|
 
 
 Nhận xét: Đúng như dự đoán lý thuyết, mô hình Transformer (DistilBERT) áp đảo hoàn toàn các mô hình tiền nhiệm. Khả năng thấu hiểu ngữ cảnh hai chiều nhờ cơ chế Attention giúp BERT phân loại xuất sắc các câu hỏi chứa các từ có nghĩa đa chiều.
