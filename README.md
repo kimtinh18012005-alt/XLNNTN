@@ -225,13 +225,11 @@ CHÈN BẢNG : 1 CỘT CÂU GỐC VÀ 1 CÂU SAU KHI XỬ LÝ
 51\. Ket qua thutc nghiém Du¢i day la bang tong hop hiéu nang cia 3 nhom phvong phap chinh dua trén
 
 Két qua So sanh M6hinh
-
-|Dac trung (Features) Accuracy|Precision|Recall|F1-Score|
-| :- | :- | :- | :- |
-|TF-IDF 68.2%|68\.5%|68\.2%|68\.1%|
-|TF-IDF 72.4%|72\.6%|724% ==|72\.5%|
-|Word2Vec / Embedding 73.8%|73\.5%|—713.8% ==|73\.6%|
-|Transformer 771%|77\.3%|771%|77\.2%|
+Mô hình,Đặc trưng (Features),Accuracy,Precision,Recall,F1-Score
+Naive Bayes,TF-IDF,68.2%,68.5%,68.2%,68.1%
+Linear SVM,TF-IDF,72.4%,72.6%,72.4%,72.5%
+Bi-LSTM,Word2Vec / Embedding,73.8%,73.5%,73.8%,73.6%
+DistilBERT,Transformer,77.1%,77.3%,77.1%,77.2%
 
 
 Nhận xét: Đúng như dự đoán lý thuyết, mô hình Transformer (DistilBERT) áp đảo hoàn toàn các mô hình tiền nhiệm. Khả năng thấu hiểu ngữ cảnh hai chiều nhờ cơ chế Attention giúp BERT phân loại xuất sắc các câu hỏi chứa các từ có nghĩa đa chiều.
