@@ -72,6 +72,7 @@ TRANG BÌA LỜI CẢM ƠN TÓM TẮT ĐỀ TÀI (ABSTRACT) MỤC LỤC & DANH M
   - Dùng  TfidfVectorizer(ngram\_range=(1,2)) chuyển text thành ma trận số.
   - Fit dữ liệu vào 3 model  MultinomialNB() ,  LogisticRegression() ,  LinearSVC() .
   - Lưu model SVC/Logistic tốt nhất thành file  .pkl để gửi cho Cường làm Demo.
+ 
 **3. Nhựt Anh (Deep Learning Engineer)**
 - Viết Word: Viết phần 2.4 và 4.3. Bắt buộc chèn hình ảnh sơ trúc tế bào LSTM (có các cổng Input, Forget, Output).
 - Nền tảng code & chạy: Bắt buộc dùng Google Colab. Phải vào mục Runtime -> Change runtime type -> Chọn T4 GPU. Mô hình mạng Nơ-ron xử lý hàng triệu tham số, nếu chạy bằng CPU máy tính bàn sẽ mất vài ngày, dùng GPU của Colab chỉ mất khoảng 15-30 phút.
@@ -82,6 +83,7 @@ TRANG BÌA LỜI CẢM ƠN TÓM TẮT ĐỀ TÀI (ABSTRACT) MỤC LỤC & DANH M
     activation='softmax') .
 
     1. Train trên Google Colab GPU. Vẽ đồ thị Loss/Accuracy qua các Epochs.
+  
 **4. Bình (Advanced NLP Engineer)**
    1. Viết Word: Viết phần 2.5 và 4.4. Đưa hình ảnh kiến trúc Transformer (phần Encoder) và giải thích cơ chế Self-Attention.
    1. Nền tảng code & chạy: Bắt buộc dùng Google Colab (GPU) hoặc Kaggle Notebook. Model BERT là model cực nặng (Hàng trăm triệu tham số), yêu cầu GPU phải có VRAM lớn (như GPU T4 16GB VRAM trên Colab). Không được chạy trên laptop cá nhân vì sẽ gây tràn RAM và treo máy.
