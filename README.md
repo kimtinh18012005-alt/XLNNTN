@@ -64,6 +64,7 @@ TRANG BÌA LỜI CẢM ƠN TÓM TẮT ĐỀ TÀI (ABSTRACT) MỤC LỤC & DANH M
   - Dùng  nltk để xóa stopwords.
   - Dùng  WordNetLemmatizer() để đưa từ về nguyên mẫu.
   - Xuất file  clean\_data.csv gửi cho cả nhóm.
+ 
 **2. Hiệp (Traditional ML Engineer)**
 - Viết Word: Viết phần 2.1, 2.2, 2.3 và 4.2. Trình bày công thức toán học của TF-IDF và định lý Naive Bayes.
 - Nền tảng code & chạy: Dùng Google Colab hoặc Jupyter Notebook. Các model Machine Learning truyền thống (SVM, Naive Bayes) chạy rất nhẹ, CPU máy tính thông thường (Core i5, RAM 8GB) vẫn chạy mượt mà.
@@ -224,22 +225,29 @@ hiện đại. Cụ thể, báo cáo tiến hành đối chiếu hiệu năng gi
 
 **1. Kết quả thực nghiệm Dưới đây là bảng tổng hợp hiệu năng của 3 nhóm phương pháp chính dựa trên tập kiểm thử (Test set).**
 
-Mô hình Đặc trưng (Features) Accuracy Precision Recall F1-Score Naive Bayes TF-IDF 68.2% 68.5% 68.2% 68.1% Linear SVM TF-IDF 72.4% 72.6% 72.4% 72.5% Bi-LSTM Word2Vec / Embedding 73.8% 73.5% 73.8% 73.6% DistilBERT Transformer 77.1% 77.3% 77.1% 77.2%
+51\. Ket qua thutc nghiém Du¢i day la bang tong hop hiéu nang cia 3 nhom phvong phap chinh dua trén
+
+|(Features) Accuracy|Precision|
+| :- | :- |
+|68\.2%|68\.5%|
+
+68\.2% 68.1%
+
+|Linear SVM TF-IDF|72\.4%|72\.6%|72\.4%|
+| :- | :- | :- | :- |
+|Bi-LSTM Word2Vec /|Embedding 73.8%|73\.5%|73\.8%|
+|DistiIBERT Transformer|77\.1%|77\.3%|77\.1%|
+
+
 
 Nhận xét: Đúng như dự đoán lý thuyết, mô hình Transformer (DistilBERT) áp đảo hoàn toàn các mô hình tiền nhiệm. Khả năng thấu hiểu ngữ cảnh hai chiều nhờ cơ chế Attention giúp BERT phân loại xuất sắc các câu hỏi chứa các từ có nghĩa đa chiều.
 
 **2. Phân tích lỗi (Error Analysis) thông qua Confusion Matrix**
-
-*Che*ˋ*nh*ˋı*nhHeatmapConf usionM atrixc*ủ*amodelBERT*
-
 Dựa vào ma trận nhầm lẫn, mô hình dự đoán chính xác nhất ở lĩnh vực "Sports" và "Computers". Tuy nhiên, mô hình có xu hướng nhầm lẫn cao giữa hai lớp "Science & Mathematics" và "Computers & Internet". Nguyên nhân do hai lĩnh vực này chia sẻ quá nhiều thuật ngữ chuyên ngành chung (ví dụ: data, calculation, formula...).
 
 **CHƯƠNG 6: TRIỂN KHAI VÀ KẾT LUẬN**
 
-**1. Triển khai Web Demo Nhằm minh họa tính ứng dụng của đề tài, nhóm đã sử dụng thư viện Streamlit đóng gói mô hình SVM (do tính gọn nhẹ và tốc độ dự đoán tức thì trên máy tính cá nhân) thành một ứng dụng Web trực quan. Người dùng nhập câu hỏi vào ô văn bản, hệ thống sẽ tiền xử lý ngầm, mã hóa vector và trả về kết quả dự đoán trên trình duyệt Localhost.**
-
-*Che*ˋ*nh*ˋı*nh*ả*nhch*ụ*pma*ˋ*nh*ˋı*nhW ebDemoco*ˊ*giaodi*ệ*nx*ị*nso*ˋ
-
-**2. Kết luận Đồ án đã hoàn thành xuất sắc mục tiêu ban đầu: Xây dựng thành công hệ thống phân loại câu hỏi tiếng Anh với 10 nhãn danh mục. Việc ứng dụng Deep Learning và Transfer Learning (BERT) đã minh chứng rõ rệt sự vượt trội so với các phương pháp trích xuất đặc trưng truyền thống.**
-**2. Hướng phát triển Trong tương lai, nhóm có thể mở rộng bài toán sang hình thức đa ngôn ngữ (Multilingual) thay vì chỉ tiếng Anh, đồng thời thử nghiệm các kỹ thuật Prompt Engineering với các mô hình GenAI mới nhất như GPT-3.5 hay Llama để đạt độ chính xác gần như tuyệt đối.**
+1. Triển khai Web Demo Nhằm minh họa tính ứng dụng của đề tài, nhóm đã sử dụng thư viện Streamlit đóng gói mô hình SVM (do tính gọn nhẹ và tốc độ dự đoán tức thì trên máy tính cá nhân) thành một ứng dụng Web trực quan. Người dùng nhập câu hỏi vào ô văn bản, hệ thống sẽ tiền xử lý ngầm, mã hóa vector và trả về kết quả dự đoán trên trình duyệt Localhost.
+2. Kết luận Đồ án đã hoàn thành xuất sắc mục tiêu ban đầu: Xây dựng thành công hệ thống phân loại câu hỏi tiếng Anh với 10 nhãn danh mục. Việc ứng dụng Deep Learning và Transfer Learning (BERT) đã minh chứng rõ rệt sự vượt trội so với các phương pháp trích xuất đặc trưng truyền thống.
+3. Hướng phát triển Trong tương lai, nhóm có thể mở rộng bài toán sang hình thức đa ngôn ngữ (Multilingual) thay vì chỉ tiếng Anh, đồng thời thử nghiệm các kỹ thuật Prompt Engineering với các mô hình GenAI mới nhất như GPT-3.5 hay Llama để đạt độ chính xác gần như tuyệt đối.
 
