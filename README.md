@@ -14,6 +14,8 @@
 | 7 | Entertainment & Music | Who is the main character in the Harry Potter series? |
 | 8 | Family & Relationships | How can parents communicate better with teenagers? |
 | 9 | Politics & Government | What are the main responsibilities of the government? |
+
+
 **PHẦN 1: SƯỜN BÁO CÁO WORD TỔNG THỂ (DÀN Ý BÁO CÁO)**
 
 Phần này là khung mục lục cho file Word. Các thành viên bám sát vào các mục này để viết nội dung tương ứng.
