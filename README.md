@@ -1,7 +1,7 @@
 
 # ĐỀ CƯƠNG & CẨM NANG THỰC THI DỰ ÁN MÔN XỬ LÝ NGÔN NGỮ TỰ NHIÊN #
 
-**Đề tài: Phân loại câu hỏi theo lĩnh vực dựa trên văn bản. Dataset: Yahoo Answers 10 categories for NLP (Kaggle). Nhóm thực hiện (5 người): Tình, Hiệp, Nhựt Anh, Bình, Cường.**
+**Đề tài: Phân loại câu hỏi theo lĩnh vực dựa trên văn bản. Dataset: Yahoo Answers 10 categories for NLP (Kaggle).https://www.kaggle.com/datasets/yacharki/yahoo-answers-10-categories-for-nlp-csv. Nhóm thực hiện (5 người): Tình, Hiệp, Nhựt Anh, Bình, Cường.**
 
 **PHẦN 1: SƯỜN BÁO CÁO WORD TỔNG THỂ (DÀN Ý BÁO CÁO)**
 
