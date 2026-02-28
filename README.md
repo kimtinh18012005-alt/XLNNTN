@@ -2,7 +2,18 @@
 # ĐỀ CƯƠNG & CẨM NANG THỰC THI DỰ ÁN MÔN XỬ LÝ NGÔN NGỮ TỰ NHIÊN #
 
 **Đề tài: Phân loại câu hỏi theo lĩnh vực dựa trên văn bản. Dataset: Yahoo Answers 10 categories for NLP (Kaggle).https://www.kaggle.com/datasets/yacharki/yahoo-answers-10-categories-for-nlp-csv. Nhóm thực hiện (5 người): Tình, Hiệp, Nhựt Anh, Bình, Cường.**
-
+| ID | Lĩnh vực (Category) | Ví dụ câu hỏi trong dataset |
+|----|---------------------|-----------------------------|
+| 0 | Society & Culture | Why do people in different cultures celebrate different holidays? |
+| 1 | Science & Mathematics | What is the difference between speed and velocity in physics? |
+| 2 | Health | What are common symptoms of high blood pressure? |
+| 3 | Education & Reference | What is the meaning of the word “photosynthesis”? |
+| 4 | Computers & Internet | How can I recover a deleted file on my computer? |
+| 5 | Sports | How many players are there on a soccer team? |
+| 6 | Business & Finance | What is the difference between stocks and bonds? |
+| 7 | Entertainment & Music | Who is the main character in the Harry Potter series? |
+| 8 | Family & Relationships | How can parents communicate better with teenagers? |
+| 9 | Politics & Government | What are the main responsibilities of the government? |
 **PHẦN 1: SƯỜN BÁO CÁO WORD TỔNG THỂ (DÀN Ý BÁO CÁO)**
 
 Phần này là khung mục lục cho file Word. Các thành viên bám sát vào các mục này để viết nội dung tương ứng.
